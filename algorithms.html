@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Algorithms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header><h1>10 Algorithms</h1></header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="algorithms.html">Algorithms</a>
+    <a href="pseudocode.html">Pseudocode</a>
+    <a href="datastructures.html">Data Structures</a>
+</nav>
+
+<div class="container">
+
+<h2>List of Algorithms</h2>
+
+<h3>1. Linear Search</h3>
+<pre>
+Algorithm LinearSearch(A, key)
+1. for i = 0 to n-1
+2.     if A[i] == key
+3.         return i
+4. return -1
+</pre>
+
+<h3>2. Binary Search</h3>
+<pre>
+Algorithm BinarySearch(A, key)
+1. low = 0, high = n-1
+2. while low ≤ high
+3.     mid = (low + high) / 2
+4.     if A[mid] == key return mid
+5.     else if key < A[mid] high = mid - 1
+6.     else low = mid + 1
+7. return -1
+</pre>
+
+<h3>3. Bubble Sort</h3>
+<pre>
+Algorithm BubbleSort(A)
+1. repeat
+2.     swapped = false
+3.     for i = 0 to n-2
+4.         if A[i] > A[i+1]
+5.             swap(A[i], A[i+1])
+6.             swapped = true
+7. until swapped = false
+</pre>
+
+<h3>4. Selection Sort</h3>
+<pre>
+Algorithm SelectionSort(A)
+1. for i = 0 to n-1
+2.     minIndex = i
+3.     for j = i+1 to n-1
+4.         if A[j] < A[minIndex]
+5.             minIndex = j
+6.     swap(A[i], A[minIndex])
+</pre>
+
+<h3>5. Insertion Sort</h3>
+<pre>
+Algorithm InsertionSort(A)
+1. for i = 1 to n-1
+2.     key = A[i]
+3.     j = i - 1
+4.     while j ≥ 0 and A[j] > key
+5.         A[j+1] = A[j]
+6.         j = j - 1
+7.     A[j+1] = key
+</pre>
+
+<h3>6. Merge Sort</h3>
+<pre>
+Algorithm MergeSort(A)
+1. if n ≤ 1 return A
+2. mid = n/2
+3. left = MergeSort(A[0:mid])
+4. right = MergeSort(A[mid:n])
+5. return Merge(left, right)
+</pre>
+
+<h3>7. Quick Sort</h3>
+<pre>
+Algorithm QuickSort(A, low, high)
+1. if low < high
+2.     p = Partition(A, low, high)
+3.     QuickSort(A, low, p-1)
+4.     QuickSort(A, p+1, high)
+</pre>
+
+<h3>8. DFS</h3>
+<pre>
+Algorithm DFS(node)
+1. mark node as visited
+2. for each neighbor of node
+3.     if neighbor not visited
+4.         DFS(neighbor)
+</pre>
+
+<h3>9. BFS</h3>
+<pre>
+Algorithm BFS(start)
+1. enqueue(start)
+2. mark start visited
+3. while queue not empty
+4.     v = dequeue()
+5.     for each neighbor u of v
+6.         if not visited
+7.             mark visited
+8.             enqueue(u)
+</pre>
+
+<h3>10. Factorial</h3>
+<pre>
+Algorithm Factorial(n)
+1. if n == 0 return 1
+2. return n * Factorial(n - 1)
+</pre>
+
+</div>
+
+<footer>
+    © 2025 Group Project
+</footer>
+
+</body>
+</html>

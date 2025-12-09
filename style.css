@@ -1,0 +1,162 @@
+/* GENERAL STYLE */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6f7fb;
+}
+
+header {
+    background: #003eaa;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+    background: #0051d4;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #003f9e;
+}
+
+/* CONTENT */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #003eaa;
+}
+
+h3 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 58, 170, 0.75), rgba(0, 0, 0, 0));
+    margin: 30px 0;
+}
+
+pre {
+    background: #eeeeee;
+    padding: 15px;
+    border-left: 5px solid #003eaa;
+    overflow-x: auto;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    transition: border 0.3s; 
+    border: 1px solid transparent; 
+}
+
+/* CODE EXECUTION BLOCK STYLES */
+
+.code-execution-block {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #fcfcfc;
+}
+
+/* Common button style */
+.run-btn, .edit-btn, .save-btn, .reset-btn, .reset-btn-inline {
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s, transform 0.1s;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Specific button colors */
+.run-btn {
+    background-color: #28a745; /* Green */
+}
+.run-btn:hover {
+    background-color: #1e7e34;
+}
+
+.edit-btn {
+    background-color: #ffc107; /* Yellow/Orange */
+    color: #333;
+}
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.save-btn {
+    background-color: #007bff; /* Blue */
+}
+.save-btn:hover {
+    background-color: #0056b3;
+}
+
+.reset-btn, .reset-btn-inline {
+    background-color: #dc3545; /* Red for Reset */
+    font-size: 0.9em;
+}
+
+.reset-btn:hover, .reset-btn-inline:hover {
+    background-color: #c82333;
+}
+
+/* Styling para sa result area */
+.result-area {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #f1f8ff;
+    font-size: 0.9em;
+}
+
+.result-area strong {
+    color: #0051d4;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.result-area pre {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+/* FOOTER */
+footer {
+    background: #003eaa;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
