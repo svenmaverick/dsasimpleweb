@@ -3,6 +3,22 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f6f7fb;
+    opacity: 0;
+    transform: translateX(-16px);
+    animation: slideFadeIn 450ms ease-out forwards;
+}
+
+@keyframes slideFadeIn {
+    from { opacity: 0; transform: translateX(-16px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
 }
 
 header {
